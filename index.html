@@ -18,15 +18,17 @@
 </head>
 
 <body>
-    <form class="container m-5">
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <p id="description">.</p>
+    <form id="survey-form" class="container m-5">
         <div class="form-group row m-1">
             <label for="name"><strong>Name <span class="star">*</span></strong></label>
             <span class="col-md-3 col-sm-6">
-                <input type="text" class="form-control" id="first" />
+                <input type="text" id="first-name" class="form-control" />
                 <label for="first" class="form-text text-muted">first</label>
             </span>
             <span class="col-md-3 col-sm-6">
-                <input type="text" class="form-control" id="last" />
+                <input type="text" id="last-name" class="form-control" />
                 <label for="last" class="form-text text-muted">last</label>
             </span>
         </div>
@@ -162,12 +164,6 @@
                             <label for="recommend1">Recommend our product to others</label>
                         </td>
                         <td>
-                            <input type="radio" name="recommend1" id="-2" />
-                        </td>
-                        <td>
-                            <input type="radio" name="recommend1" id="-1" />
-                        </td>
-                        <td>
                             <input type="radio" name="recommend1" id="0" />
                         </td>
                         <td>
@@ -176,16 +172,16 @@
                         <td>
                             <input type="radio" name="recommend1" id="2" />
                         </td>
+                        <td>
+                            <input type="radio" name="recommend1" id="3" />
+                        </td>
+                        <td>
+                            <input type="radio" name="recommend1" id="4" />
+                        </td>
                     </tr>
                     <tr>
                         <td col="3">
                             <label for="recommend2">Recommend our company to others</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="recommend2" id="-2" />
-                        </td>
-                        <td>
-                            <input type="radio" name="recommend2" id="-1" />
                         </td>
                         <td>
                             <input type="radio" name="recommend2" id="0" />
@@ -196,6 +192,12 @@
                         <td>
                             <input type="radio" name="recommend2" id="2" />
                         </td>
+                        <td>
+                            <input type="radio" name="recommend2" id="3" />
+                        </td>
+                        <td>
+                            <input type="radio" name="recommend2" id="4" />
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -205,8 +207,10 @@
             <br />
             <textarea id="comments" rows="4" class="col-12"></textarea>
         </div>
-        <button class="btn btn-primary m-3">Submit</button>
+        <button id="submit" class="btn btn-primary m-3">Submit</button>
     </form>
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 </body>
 
 </html>
