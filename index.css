@@ -1,0 +1,21 @@
+.checked {
+    color: orange !important;
+}
+
+.star {
+    color: red;
+}
+
+@media (max-width: 620px) {
+    .tables {
+        overflow-x: auto;
+    }
+}
+
+textarea {
+    resize: both;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
